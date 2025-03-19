@@ -5,20 +5,33 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Scaffold(
+      home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello World veeerr'),
-          
+          leading: Icon(Icons.electric_meter),
+          title: Text('My First App'),
+          actions: [Icon(Icons.search), Icon(Icons.more_vert)],
         ),
-        body: Center(
-          child: Text('Hello World'),
+        body: Container(
+          alignment: Alignment.center,
+          color: Colors.brown,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text('Hello World', style: TextStyle(fontSize: 30)),
+              Row(
+                children: [
+                  Text('Hello World', style: TextStyle(fontSize: 30)),
+                  Text("Demo Data", style: TextStyle(fontSize: 30)),
+                  Icon(Icons.add),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
-
     );
   }
 }

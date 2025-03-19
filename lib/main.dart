@@ -14,21 +14,23 @@ class MyApp extends StatelessWidget {
           title: Text('My First App'),
           actions: [Icon(Icons.search), Icon(Icons.more_vert)],
         ),
-        body: Container(
-          alignment: Alignment.center,
-          color: Colors.brown,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text('Hello World', style: TextStyle(fontSize: 30)),
-              Row(
-                children: [
-                  Text('Hello World', style: TextStyle(fontSize: 30)),
-                  Text("Demo Data", style: TextStyle(fontSize: 30)),
-                  Icon(Icons.add),
-                ],
-              ),
+        body: Text(
+          'Hello World',
+          style: TextStyle(
+            fontSize: 32,
+            color: Colors.yellowAccent,
+            // backgroundColor: Colors.black,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
+            decoration: TextDecoration.underline,
+            decorationColor: Colors.red,
+            decorationStyle: TextDecorationStyle.dotted,
+            letterSpacing: 5,
+            wordSpacing: 20,
+            shadows: [
+              Shadow(color: Colors.blue, offset: Offset(4, 3), blurRadius: 3),
             ],
+            
           ),
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_project_name/screens/DesignView.dart';
+import 'package:my_project_name/screens/StackView.dart';
 // import 'package:my_project_name/screens/TextFieldInput.dart';
 
 void main() {
@@ -11,6 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: DesignView(title: "Flutter Design View hjgjgjg"));
+    return MaterialApp(home: StackView());
   }
 }
